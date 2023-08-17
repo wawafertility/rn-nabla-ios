@@ -92,15 +92,6 @@
         }
       },
       {
-        "package": "Sentry",
-        "repositoryURL": "https://github.com/getsentry/sentry-cocoa.git",
-        "state": {
-          "branch": null,
-          "revision": "24fa90aa4ef8f81c65eb5803e40875f685de0dcd",
-          "version": "8.1.0"
-        }
-      },
-      {
         "package": "ShellOut",
         "repositoryURL": "https://github.com/JohnSundell/ShellOut",
         "state": {
