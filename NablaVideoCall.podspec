@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   spec.name               = "NablaVideoCall"
   spec.version            = "2.0.0"
-  spec.summary            = "NablaVideoCall iOS SDK"
+  spec.summary            = "#{spec.name} iOS SDK"
 
   spec.description        = <<-DESC
       The Nabla iOS SDK makes it quick and easy to build an excellent healthcare communication experience in your iOS app. 
@@ -19,8 +19,8 @@ Pod::Spec.new do |spec|
   spec.platform           = :ios, "13.0"
   spec.swift_versions     = '5.0'
   spec.source             = { :git => "https://github.com/wawafertility/rn-nabla-ios.git", :tag => "#{spec.version}" }
-  spec.source_files       = ["Sources/NablaVideoCall/**/*.swift"]
-  spec.resource_bundles   = {"NablaVideoCallResources" => "Sources/NablaVideoCall/Resources/**/*"}
+  spec.source_files       = ["Sources/#{spec.name}/**/*.swift"]
+  spec.resource_bundles   = {"#{spec.name}Resources" => "Sources/#{spec.name}/Resources/**/*"}
 
   spec.dependency           'NablaCore', "#{spec.version}"
   spec.dependency           'LiveKitClient', '~> 1.0.13'
