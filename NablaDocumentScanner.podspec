@@ -1,8 +1,8 @@
 Pod::Spec.new do |spec|
 
-  spec.name               = "WNablaMessagingUI"
+  spec.name               = "NablaDocumentScanner"
   spec.version            = "2.0.0"
-  spec.summary            = "NablaMessagingUI iOS SDK"
+  spec.summary            = "NablaDocumentScanner iOS SDK"
 
   spec.description        = <<-DESC
       The Nabla iOS SDK makes it quick and easy to build an excellent healthcare communication experience in your iOS app. 
@@ -19,10 +19,5 @@ Pod::Spec.new do |spec|
   spec.platform           = :ios, "13.0"
   spec.swift_versions     = '5.0'
   spec.source             = { :git => "https://github.com/wawafertility/rn-nabla-ios.git", :tag => "#{spec.version}" }
-  spec.source_files       = ["Sources/NablaMessagingUI/**/*.swift"]
-  spec.resource_bundles   = {"NablaMessagingUIResources" => "Sources/NablaMessagingUI/Resources/**/*"}
-
-  spec.dependency           'WNablaCore', "#{spec.version}"
-  spec.dependency           'WNablaMessagingCore', "#{spec.version}"
-  spec.dependency           'WNablaDocumentScanner', "#{spec.version}"
+  spec.source_files       = ["Sources/NablaDocumentScanner/**/*.swift"]
 end
