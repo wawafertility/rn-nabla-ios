@@ -18,6 +18,6 @@ Pod::Spec.new do |spec|
   spec.author             = "Nabla Technologies"
   spec.platform           = :ios, "13.0"
   spec.swift_versions     = '5.0'
-  spec.source             = { :git => "https://github.com/nabla/nabla-ios.git", :tag => "#{spec.version}" }
+  spec.source             = { :git => "https://github.com/wawafertility/rn-nabla-ios.git", :tag => "#{spec.version}" }
   spec.source_files       = ["Sources/#{spec.name}/**/*.swift"]
 end
