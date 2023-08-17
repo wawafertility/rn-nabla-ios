@@ -9,23 +9,13 @@ final class InitializeInteractorImpl: InitializeInteractor {
         extraHeaders.set(environment.version, for: HTTPHeaders.Version)
         extraHeaders.set(formatApiKey(apiKey), for: HTTPHeaders.NablaApiKey)
         
-        sentryConfigurationObserver = deviceRepository
-            .watchSentryConfiguration()
-            .removeDuplicates()
-            .sink(receiveValue: { [errorReporter, environment] configuration in
-                errorReporter.enable(dsn: configuration.dsn, env: configuration.env, sdkVersion: environment.version)
-            })
-        
         currentUserObserver = userRepository
             .watchCurrentUser()
             .compactMap { $0 }
             .sink(receiveValue: { [deviceRepository, modules, logger] user in
                 Task {
                     do {
-                        let sentry = try await deviceRepository.updateOrRegisterDevice(userId: user.id, withModules: modules)
-                        if let sentry = sentry {
-                            deviceRepository.setSentryConfiguration(sentry)
-                        }
+                        try await deviceRepository.updateOrRegisterDevice(userId: user.id, withModules: modules)
                     } catch {
                         logger.warning(message: "Failed to register device", error: error, extra: ["user": user.id])
                     }
@@ -61,7 +51,6 @@ final class InitializeInteractorImpl: InitializeInteractor {
     private let logger: Logger
     private let modules: [Module]
     
-    private var sentryConfigurationObserver: Cancellable?
     private var currentUserObserver: Cancellable?
     
     private func formatApiKey(_ apiKey: String) -> String {

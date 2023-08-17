@@ -66,10 +66,7 @@ public class CoreContainer {
 
         let compositeLogger = MutableCompositeLogger(configuration.logger)
         logger = compositeLogger
-        errorReporter = configuration.enableReporting
-            ? SentryErrorReporter(logger: logger)
-            : NoOpErrorReporter()
-        
+        errorReporter = NoOpErrorReporter()
         scopedKeyValueStore = KeyValueStoreImpl(namespace: name)
         dangerouslyUnscopedKeyValueStore = KeyValueStoreImpl(namespace: "nablaGlobal")
         

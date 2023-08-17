@@ -20,17 +20,6 @@ final class DeviceLocalDataSourceImpl: DeviceLocalDataSource {
         try? dangerouslyUnscopedStore.set(deviceId, forKey: generateKeyForDeviceId(forUserId: userId))
     }
     
-    func watchSentryConfiguration() -> AnyPublisher<SentryConfiguration, Never> {
-        sentryConfiguration
-            .compactMap { $0 }
-            .eraseToAnyPublisher()
-    }
-    
-    func setSentryConfiguration(_ configuration: SentryConfiguration) {
-        sentryConfiguration.send(configuration)
-        try? scopedStore.set(configuration, forKey: Keys.sentryConfigurationKey)
-    }
-    
     var deviceModel: String {
         if let simModelCode = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] {
             return "Simulator \(simModelCode)"
@@ -62,21 +51,18 @@ final class DeviceLocalDataSourceImpl: DeviceLocalDataSource {
         self.scopedStore = scopedStore
         dangerouslyUnscopedStore = unscopedStore
         self.logger = logger
-        sentryConfiguration = .init(try? scopedStore.get(forKey: Keys.sentryConfigurationKey))
     }
     
     // MARK: - Private
     
     private enum Keys {
         static let deviceIdKey = "DeviceLocalDataSourceImpl.deviceIdKey"
-        static let sentryConfigurationKey = "DeviceLocalDataSourceImpl.sentry.configuration"
     }
 
     private let scopedStore: KeyValueStore
     /// We store the deviceId in the unscoped storage so that we are sure we always send the same deviceId for a given userId, no matter the SDK instance
     private let dangerouslyUnscopedStore: KeyValueStore
     private let logger: Logger
-    private let sentryConfiguration: CurrentValueSubject<SentryConfiguration?, Never>
     
     private func readCodeVersion() -> Int {
         guard let url = NablaCorePackage.resourcesBundle.url(forResource: "version", withExtension: nil) else {

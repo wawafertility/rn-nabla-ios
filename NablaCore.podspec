@@ -24,5 +24,4 @@ Pod::Spec.new do |spec|
 
   spec.dependency           'Apollo/WebSocket', '~> 0.51.2'
   spec.dependency           'Apollo/SQLite', '~> 0.51.2'
-  spec.dependency           'Sentry', '~> 8.1.0'
 end
