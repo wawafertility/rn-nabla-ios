@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
   spec.source_files       = ["Sources/#{spec.name}/**/*.swift"]
   spec.resource_bundles   = {"#{spec.name}Resources" => "Sources/#{spec.name}/Resources/**/*"}
 
-  spec.dependency           'NablaCore', "#{spec.version}"
-  spec.dependency           'NablaMessagingCore', "#{spec.version}"
-  spec.dependency           'NablaDocumentScanner', "#{spec.version}"
+  spec.dependency           'WNablaCore', "#{spec.version}"
+  spec.dependency           'WNablaMessagingCore', "#{spec.version}"
+  spec.dependency           'WNablaDocumentScanner', "#{spec.version}"
 end
