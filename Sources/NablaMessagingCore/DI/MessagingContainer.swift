@@ -1,5 +1,5 @@
 import Foundation
-import NablaCore
+import W_NablaCore
 
 public class MessagingContainer {
     // MARK: - Public

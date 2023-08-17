@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import W_NablaCore
 
 final class TransientUUID {
     // MARK: - Internal

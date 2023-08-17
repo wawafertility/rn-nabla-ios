@@ -1,5 +1,5 @@
 import Foundation
-import NablaCore
+import W_NablaCore
 
 final class StartConversationInteractorImpl: StartConversationInteractor {
     // MARK: - Initializer

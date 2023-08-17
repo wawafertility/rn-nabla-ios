@@ -1,5 +1,5 @@
 import Foundation
-import NablaCore
+import W_NablaCore
 
 public struct ImageFile: Media, Equatable, Hashable {
     public let fileName: String
