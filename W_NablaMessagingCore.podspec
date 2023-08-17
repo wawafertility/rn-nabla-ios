@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 
-  spec.name               = "W-NablaMessagingCore"
+  spec.name               = "W_NablaMessagingCore"
   spec.version            = "2.0.0"
   spec.summary            = "FORKED: NablaMessagingCore iOS SDK"
 
@@ -22,5 +22,5 @@ Pod::Spec.new do |spec|
   spec.source_files       = ["Sources/NablaMessagingCore/**/*.swift"]
   spec.resource_bundles   = {"NablaMessagingCoreResources" => "Sources/NablaMessagingCore/Resources/**/*"}
 
-  spec.dependency           'W-NablaCore', "#{spec.version}"
+  spec.dependency           'W_NablaCore', "#{spec.version}"
 end
