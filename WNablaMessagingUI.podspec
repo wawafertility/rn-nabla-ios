@@ -1,12 +1,12 @@
 Pod::Spec.new do |spec|
 
-  spec.name               = "NablaScheduling"
+  spec.name               = "WNablaMessagingUI"
   spec.version            = "2.0.0"
   spec.summary            = "#{spec.name} iOS SDK"
 
   spec.description        = <<-DESC
-      The Nabla iOS SDK makes it quick and easy to build an excellent healthcare communication experience in your iOS app.
-      We provide powerful and customizable UI elements that can be used out-of-the-box to create a full healthcare communication experience.
+      The Nabla iOS SDK makes it quick and easy to build an excellent healthcare communication experience in your iOS app. 
+      We provide powerful and customizable UI elements that can be used out-of-the-box to create a full healthcare communication experience. 
       We also expose the low-level APIs that power those UIs so that you can build fully custom experiences.
 
       Right now the library is in alpha, meaning all core features are here and ready to be used but API might change during the journey to a stable 1.0 version.
@@ -23,4 +23,6 @@ Pod::Spec.new do |spec|
   spec.resource_bundles   = {"#{spec.name}Resources" => "Sources/#{spec.name}/Resources/**/*"}
 
   spec.dependency           'NablaCore', "#{spec.version}"
+  spec.dependency           'NablaMessagingCore', "#{spec.version}"
+  spec.dependency           'NablaDocumentScanner', "#{spec.version}"
 end

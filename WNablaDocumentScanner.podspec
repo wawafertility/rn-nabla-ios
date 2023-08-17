@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 
-  spec.name               = "NablaMessagingUI"
+  spec.name               = "WNablaDocumentScanner"
   spec.version            = "2.0.0"
   spec.summary            = "#{spec.name} iOS SDK"
 
@@ -20,9 +20,4 @@ Pod::Spec.new do |spec|
   spec.swift_versions     = '5.0'
   spec.source             = { :git => "https://github.com/wawafertility/rn-nabla-ios.git", :tag => "#{spec.version}" }
   spec.source_files       = ["Sources/#{spec.name}/**/*.swift"]
-  spec.resource_bundles   = {"#{spec.name}Resources" => "Sources/#{spec.name}/Resources/**/*"}
-
-  spec.dependency           'NablaCore', "#{spec.version}"
-  spec.dependency           'NablaMessagingCore', "#{spec.version}"
-  spec.dependency           'NablaDocumentScanner', "#{spec.version}"
 end
