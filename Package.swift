@@ -84,7 +84,7 @@ let package = Package(
         .target(
             name: "NablaMessagingCore",
             dependencies: [
-                .target(name: "NablaCore"),
+                .target(name: "W_NablaCore"),
             ],
             exclude: [
                 "build.sh",
