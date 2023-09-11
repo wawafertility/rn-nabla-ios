@@ -3,7 +3,7 @@
 #else
     import LiveKit
 #endif
-import NablaCore
+import NablaCoreFork
 import UIKit
 
 class VideoTrackView: UIView {

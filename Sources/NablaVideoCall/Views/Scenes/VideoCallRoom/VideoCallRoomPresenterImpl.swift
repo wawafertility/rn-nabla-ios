@@ -5,7 +5,7 @@ import Foundation
 #else
     import LiveKit
 #endif
-import NablaCore
+import NablaCoreFork
 
 final class VideoCallRoomPresenterImpl: VideoCallRoomPresenter {
     // MARK: - Internal

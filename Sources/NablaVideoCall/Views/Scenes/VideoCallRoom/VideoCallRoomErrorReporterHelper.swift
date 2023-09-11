@@ -4,7 +4,7 @@ import Foundation
 #else
     import LiveKit
 #endif
-import protocol NablaCore.ErrorReporter
+import protocol NablaCoreFork.ErrorReporter
 
 final class VideoCallRoomErrorReporterHelper {
     init(errorReporter: ErrorReporter) {

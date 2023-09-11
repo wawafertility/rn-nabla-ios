@@ -1,4 +1,4 @@
-import NablaCore
+import NablaCoreFork
 
 public extension NablaVideoCallClient {
     var views: NablaVideoCallViewFactory {
