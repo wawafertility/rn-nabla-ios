@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   spec.name               = "NablaSchedulingFork"
   spec.version            = "2.0.1"
-  spec.module_name        = 'NablaSchedulingFork'
+  spec.module_name        = "NablaSchedulingFork"
   spec.summary            = "NablaScheduling iOS SDK fork"
 
   spec.description        = <<-DESC
@@ -18,10 +18,10 @@ Pod::Spec.new do |spec|
   spec.license            = { :type => "MIT", :file => "LICENSE" }
   spec.author             = "Nabla Technologies"
   spec.platform           = :ios, "13.0"
-  spec.swift_versions     = '5.0'
+  spec.swift_versions     = "5.0"
   spec.source             = { :git => "https://github.com/wawafertility/rn-nabla-ios.git", :tag => "#{spec.version}" }
   spec.source_files       = ["Sources/NablaScheduling/**/*.swift"]
   spec.resource_bundles   = {"NablaSchedulingResources" => "Sources/NablaScheduling/Resources/**/*"}
   
-  spec.dependency           'NablaCoreFork', "#{spec.version}"
+  spec.dependency           "NablaCoreFork", "#{spec.version}"
 end
