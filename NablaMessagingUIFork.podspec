@@ -1,8 +1,9 @@
 Pod::Spec.new do |spec|
 
-  spec.name               = "NablaMessagingUI"
-  spec.version            = "2.0.0"
-  spec.summary            = "#{spec.name} iOS SDK"
+  spec.name               = "NablaMessagingUIFork"
+  spec.version            = "2.0.1"
+  spec.module_name        = 'NablaMessagingUIFork'
+  spec.summary            = "NablaMessagingUI iOS SDK fork"
 
   spec.description        = <<-DESC
       The Nabla iOS SDK makes it quick and easy to build an excellent healthcare communication experience in your iOS app. 
@@ -19,14 +20,10 @@ Pod::Spec.new do |spec|
   spec.platform           = :ios, "13.0"
   spec.swift_versions     = '5.0'
   spec.source             = { :git => "https://github.com/wawafertility/rn-nabla-ios.git", :tag => "#{spec.version}" }
-  spec.source_files       = ["Sources/#{spec.name}/**/*.swift"]
-  spec.resource_bundles   = {"#{spec.name}Resources" => "Sources/#{spec.name}/Resources/**/*"}
+  spec.source_files       = ["Sources/NablaMessagingUI/**/*.swift"]
+  spec.resource_bundles   = {"NablaMessagingUIResources" => "Sources/NablaMessagingUI/Resources/**/*"}
 
-  # spec.dependency           'NablaCore', "#{spec.version}"
-  # spec.dependency           'NablaMessagingCore', "#{spec.version}"
-  # spec.dependency           'NablaDocumentScanner', "#{spec.version}"
-
-  spec.dependency 'NablaCore', :git => 'https://github.com/wawafertility/rn-nabla-ios.git', :tag => "#{spec.version}"
-  spec.dependency 'NablaMessagingCore', :git => 'https://github.com/wawafertility/rn-nabla-ios.git', :tag => "#{spec.version}"
-  spec.dependency 'NablaDocumentScanner', :git => 'https://github.com/wawafertility/rn-nabla-ios.git', :tag => "#{spec.version}"
+  spec.dependency           'NablaCoreFork', "#{spec.version}"
+  spec.dependency           'NablaMessagingCoreFork', "#{spec.version}"
+  spec.dependency           'NablaDocumentScannerFork', "#{spec.version}"
 end

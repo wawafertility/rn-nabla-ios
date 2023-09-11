@@ -1,8 +1,9 @@
 Pod::Spec.new do |spec|
 
   spec.name               = "NablaSchedulingFork"
-  spec.version            = "2.0.0"
-  spec.summary            = "NablaScheduling iOS SDK"
+  spec.version            = "2.0.1"
+  spec.module_name        = 'NablaSchedulingFork'
+  spec.summary            = "NablaScheduling iOS SDK fork"
 
   spec.description        = <<-DESC
       The Nabla iOS SDK makes it quick and easy to build an excellent healthcare communication experience in your iOS app.
