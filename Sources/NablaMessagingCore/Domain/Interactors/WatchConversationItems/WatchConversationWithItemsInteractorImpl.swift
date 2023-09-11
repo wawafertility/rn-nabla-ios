@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 class WatchConversationItemsInteractorImpl: AuthenticatedInteractor, WatchConversationItemsInteractor {
     // MARK: - Initializer

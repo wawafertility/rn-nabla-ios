@@ -19,9 +19,8 @@ Pod::Spec.new do |spec|
   spec.platform           = :ios, "13.0"
   spec.swift_versions     = '5.0'
   spec.source             = { :git => "https://github.com/wawafertility/rn-nabla-ios.git", :tag => "#{spec.version}" }
-  spec.source_files       = ["Sources/NablaMessagingCore/**/*.swift", "Sources/NablaMessagingCore/NablaCore-umbrella.h"]
+  spec.source_files       = ["Sources/NablaMessagingCore/**/*.swift"]
   spec.resource_bundles   = {"NablaMessagingCoreResources" => "Sources/NablaMessagingCore/Resources/**/*"}
-  spec.module_map         = "NablaMessagingCore.modulemap"
 
   spec.dependency           'NablaCoreFork', "#{spec.version}"
 end

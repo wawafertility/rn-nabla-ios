@@ -1,5 +1,5 @@
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 /// Medias are a representation of a file.
 /// Those can be created with a local fileUrl, or a remote one.

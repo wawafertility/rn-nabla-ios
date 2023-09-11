@@ -1,5 +1,5 @@
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 protocol SetIsTypingInteractor {
     /// - Throws: ``NablaError``

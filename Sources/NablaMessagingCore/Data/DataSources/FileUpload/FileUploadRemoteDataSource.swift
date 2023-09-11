@@ -1,5 +1,5 @@
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 enum FileUploadRemoteDataSourceError: Error {
     case cannotReadFileData

@@ -1,5 +1,5 @@
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 // sourcery: AutoMockable
 protocol GateKeepers {

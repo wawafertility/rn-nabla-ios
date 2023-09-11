@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 class ConversationItemRepositoryImpl: ConversationItemRepository {
     // MARK: - Initializer

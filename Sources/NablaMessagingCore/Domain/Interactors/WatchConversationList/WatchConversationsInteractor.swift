@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 protocol WatchConversationsInteractor {
     func execute() -> AnyPublisher<Response<PaginatedList<Conversation>>, NablaError>
