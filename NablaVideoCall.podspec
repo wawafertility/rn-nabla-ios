@@ -22,6 +22,8 @@ Pod::Spec.new do |spec|
   spec.source_files       = ["Sources/#{spec.name}/**/*.swift"]
   spec.resource_bundles   = {"#{spec.name}Resources" => "Sources/#{spec.name}/Resources/**/*"}
 
-  spec.dependency           'NablaCore', "#{spec.version}"
+  # spec.dependency           'NablaCore', "#{spec.version}"
+  spec.dependency 'NablaCore', :git => 'https://github.com/wawafertility/rn-nabla-ios.git', :tag => "#{spec.version}"
+
   spec.dependency           'LiveKitClient', '~> 1.0.13'
 end
