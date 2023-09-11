@@ -1,0 +1,4 @@
+framework module NablaCore {
+    umbrella header "NablaCore-umbrella.h"
+    export *
+}
