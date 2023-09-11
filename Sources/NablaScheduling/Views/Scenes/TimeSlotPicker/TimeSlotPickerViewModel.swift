@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 protocol TimeSlotPickerViewModelDelegate: AnyObject {
     func timeSlotPickerViewModel(_ viewModel: TimeSlotPickerViewModel, didSelect: Appointment)

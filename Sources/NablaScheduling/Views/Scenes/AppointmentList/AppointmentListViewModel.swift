@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 public protocol AppointmentListDelegate: AnyObject {
     @MainActor func appointmentListDidSelectAppointment(_ appointment: Appointment)

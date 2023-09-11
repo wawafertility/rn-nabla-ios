@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 protocol AvailabilitySlotRemoteDataSource {
     func watchCategories() -> AnyPublisher<[RemoteCategory], GQLError>

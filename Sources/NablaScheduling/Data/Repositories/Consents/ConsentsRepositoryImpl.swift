@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 final class ConsentsRepositoryImpl: ConsentsRepository {
     func watchConsents(location: LocationType) -> AnyPublisher<Consents, NablaError> {

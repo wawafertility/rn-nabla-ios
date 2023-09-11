@@ -1,4 +1,4 @@
-import NablaCore
+import NablaCoreFork
 
 public extension NablaSchedulingClient {
     var crossModuleViews: SchedulingViewFactory {

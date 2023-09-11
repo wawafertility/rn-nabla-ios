@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 final class ProviderRemoteDataSourceImpl: ProviderRemoteDataSource {
     // MARK: - Internal

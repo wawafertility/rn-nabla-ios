@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 final class ConsentsRemoteDataSourceImpl: ConsentsRemoteDataSource {
     // MARK: - Internal

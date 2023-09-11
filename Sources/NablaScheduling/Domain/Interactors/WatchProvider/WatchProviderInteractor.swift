@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 protocol WatchProviderInteractor {
     func execute(providerId: UUID) -> AnyPublisher<Provider, NablaError>

@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 protocol CategoryPickerViewModelDelegate: AnyObject {
     func categoryPickerViewModel(_ viewModel: CategoryPickerViewModel, didSelect: Category)

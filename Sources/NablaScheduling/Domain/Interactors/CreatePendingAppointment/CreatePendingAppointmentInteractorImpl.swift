@@ -1,5 +1,5 @@
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 final class CreatePendingAppointmentInteractorImpl: AuthenticatedInteractor, CreatePendingAppointmentInteractor {
     // MARK: - Internal

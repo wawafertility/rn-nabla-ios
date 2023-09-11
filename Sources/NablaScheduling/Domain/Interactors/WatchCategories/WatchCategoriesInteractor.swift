@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 protocol WatchCategoriesInteractor {
     func execute() -> AnyPublisher<[Category], NablaError>

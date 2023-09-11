@@ -1,11 +1,11 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 final class WatchConsentsInteractorImpl: AuthenticatedInteractor, WatchConsentsInteractor {
     // MARK: - Internal
 
-    func execute(location: LocationType) -> AnyPublisher<Consents, NablaCore.NablaError> {
+    func execute(location: LocationType) -> AnyPublisher<Consents, NablaCoreFork.NablaError> {
         isAuthenticated
             .nabla.switchToLatest { [consentsRepository] in
                 consentsRepository.watchConsents(location: location)

@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 protocol WatchConsentsInteractor {
     func execute(location: LocationType) -> AnyPublisher<Consents, NablaError>

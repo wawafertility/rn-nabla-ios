@@ -1,4 +1,4 @@
-import NablaCore
+import NablaCoreFork
 import UIKit
 
 public final class AppointmentDetailsView: UIView {

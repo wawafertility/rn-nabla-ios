@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 protocol WatchAppointmentInteractor {
     func execute(id: UUID) -> AnyPublisher<Appointment, NablaError>

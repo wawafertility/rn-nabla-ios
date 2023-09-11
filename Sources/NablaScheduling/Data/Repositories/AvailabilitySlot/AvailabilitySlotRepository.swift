@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 // sourcery: AutoMockable
 // sourcery: typealias = "Category = NablaScheduling.Category"

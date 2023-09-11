@@ -1,4 +1,4 @@
-import NablaCore
+import NablaCoreFork
 import UIKit
 
 final class TimeSlotPickerViewController: UIViewController {

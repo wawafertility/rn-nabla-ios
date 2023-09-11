@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 protocol AppointmentConfirmationViewModelDelegate: AnyObject {
     func appointmentConfirmationViewModel(_ viewModel: AppointmentConfirmationViewModel, confirm: Appointment) async throws

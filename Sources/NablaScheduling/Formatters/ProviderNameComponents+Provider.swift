@@ -1,5 +1,5 @@
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 extension ProviderNameComponents {
     init(_ provider: Provider) {

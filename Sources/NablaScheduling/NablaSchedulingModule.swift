@@ -1,6 +1,6 @@
-import NablaCore
+import NablaCoreFork
 
-public struct NablaSchedulingModule: NablaCore.SchedulingModule {
+public struct NablaSchedulingModule: NablaCoreFork.SchedulingModule {
     public func makeClient(container: CoreContainer) -> SchedulingClient {
         NablaSchedulingClient(container: container)
     }
