@@ -3,7 +3,7 @@ import Foundation
 import NablaCoreFork
 
 /// Main entry-point for SDK messaging features.
-public class NablaMessagingClient: NablaCore.MessagingClient {
+public class NablaMessagingClient: NablaCoreFork.MessagingClient {
     // MARK: - Public
     
     public static var shared: NablaMessagingClient {
