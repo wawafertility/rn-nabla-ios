@@ -1,5 +1,5 @@
 import Foundation
-import W_NablaCore
+import NablaCore
 
 public class MessagingError: NablaError {}
 

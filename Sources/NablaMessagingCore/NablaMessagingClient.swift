@@ -1,9 +1,9 @@
 import Combine
 import Foundation
-import W_NablaCore
+import NablaCore
 
 /// Main entry-point for SDK messaging features.
-public class NablaMessagingClient: W_NablaCore.MessagingClient {
+public class NablaMessagingClient: NablaCore.MessagingClient {
     // MARK: - Public
     
     public static var shared: NablaMessagingClient {

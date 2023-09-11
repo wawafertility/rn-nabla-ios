@@ -1,5 +1,5 @@
 import Foundation
-import W_NablaCore
+import NablaCore
 
 struct RemoteFileUpload {
     let fileName: String

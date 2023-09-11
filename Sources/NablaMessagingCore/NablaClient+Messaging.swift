@@ -1,4 +1,4 @@
-import W_NablaCore
+import NablaCore
 
 public extension NablaClient {
     var messaging: NablaMessagingClient {

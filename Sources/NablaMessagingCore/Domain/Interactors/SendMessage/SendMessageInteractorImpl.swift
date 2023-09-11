@@ -1,5 +1,5 @@
 import Foundation
-import W_NablaCore
+import NablaCore
 
 final class SendMessageInteractorImpl: AuthenticatedInteractor, SendMessageInteractor {
     // MARK: - Initializer
