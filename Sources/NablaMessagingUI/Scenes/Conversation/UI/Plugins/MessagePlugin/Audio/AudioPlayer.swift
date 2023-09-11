@@ -1,7 +1,7 @@
 import AVKit
 import Foundation
-import NablaCore
-import NablaMessagingCore
+import NablaCoreFork
+import NablaMessagingCoreFork
 
 protocol AudioPlayerDelegate: AnyObject {
     func audioPlayer(_ player: AudioPlayer, didUpdateCurrentPlayTime time: TimeInterval)

@@ -1,10 +1,10 @@
 import Foundation
-import NablaMessagingCore
+import NablaMessagingCoreFork
 
 struct AudioMessageViewItem: ConversationViewMessageItem {
     let id: UUID
     let date: Date
-    let sender: NablaMessagingCore.ConversationMessageSender
+    let sender: NablaMessagingCoreFork.ConversationMessageSender
     let sendingState: ConversationMessageSendingState
     let replyTo: ConversationViewMessageItem?
     let audio: AudioFile

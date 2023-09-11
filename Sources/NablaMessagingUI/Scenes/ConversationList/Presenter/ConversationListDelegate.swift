@@ -1,5 +1,5 @@
 import Foundation
-import NablaMessagingCore
+import NablaMessagingCoreFork
 
 public protocol ConversationListDelegate: AnyObject {
     func conversationList(didSelect conversation: Conversation)

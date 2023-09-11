@@ -1,6 +1,6 @@
 import Foundation
 import LinkPresentation
-import NablaCore
+import NablaCoreFork
 import UIKit
 
 final class ImageDetailViewController: UIViewController, ImageDetailViewContract {

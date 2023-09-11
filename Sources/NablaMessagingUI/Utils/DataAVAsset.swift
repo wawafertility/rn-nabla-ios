@@ -1,6 +1,6 @@
 import AVKit
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 final class DataAVAsset: AVURLAsset {
     private var file: TemporaryMediaFile?

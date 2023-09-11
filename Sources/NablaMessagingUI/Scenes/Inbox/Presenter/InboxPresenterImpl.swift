@@ -1,6 +1,6 @@
 import Foundation
-import NablaCore
-import NablaMessagingCore
+import NablaCoreFork
+import NablaMessagingCoreFork
 
 public protocol InboxDelegate: AnyObject {
     @MainActor func inbox(didCreate conversation: Conversation)

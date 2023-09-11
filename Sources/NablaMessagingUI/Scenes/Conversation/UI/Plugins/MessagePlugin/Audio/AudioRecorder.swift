@@ -1,7 +1,7 @@
 import AVFoundation
 import Foundation
-import NablaCore
-import NablaMessagingCore
+import NablaCoreFork
+import NablaMessagingCoreFork
 import UIKit
 
 private enum Constants {

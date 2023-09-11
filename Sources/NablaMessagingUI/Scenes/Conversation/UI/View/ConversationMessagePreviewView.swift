@@ -1,4 +1,4 @@
-import NablaCore
+import NablaCoreFork
 import UIKit
 
 class ConversationMessagePreviewView: UIView {

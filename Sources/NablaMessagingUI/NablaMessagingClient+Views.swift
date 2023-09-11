@@ -1,4 +1,4 @@
-import NablaMessagingCore
+import NablaMessagingCoreFork
 
 public extension NablaMessagingClient {
     var views: NablaMessagingViewFactory {

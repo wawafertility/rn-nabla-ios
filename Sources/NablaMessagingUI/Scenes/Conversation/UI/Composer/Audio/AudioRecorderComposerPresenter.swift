@@ -1,5 +1,5 @@
 import Foundation
-import NablaMessagingCore
+import NablaMessagingCoreFork
 
 protocol AudioRecorderComposerPresenterDelegate: AnyObject {
     func audioRecorderComposerPresenterDidStartRecording(_ presenter: AudioRecorderComposerPresenter)

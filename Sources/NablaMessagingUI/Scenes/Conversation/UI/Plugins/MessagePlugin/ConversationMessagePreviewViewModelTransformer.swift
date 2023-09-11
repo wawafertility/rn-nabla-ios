@@ -1,6 +1,6 @@
 import Foundation
-import NablaCore
-import NablaMessagingCore
+import NablaCoreFork
+import NablaMessagingCoreFork
 
 struct ConversationMessagePreviewViewModelTransformer {
     // MARK: - Public

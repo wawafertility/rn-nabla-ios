@@ -1,4 +1,4 @@
-import NablaMessagingCore
+import NablaMessagingCoreFork
 import UIKit
 
 protocol DocumentPickerDelegate: AnyObject {

@@ -1,5 +1,5 @@
-import NablaCore
-import NablaMessagingCore
+import NablaCoreFork
+import NablaMessagingCoreFork
 import UIKit
 
 class ReplyToComposerView: UIView, ReplyToComposerViewContract {

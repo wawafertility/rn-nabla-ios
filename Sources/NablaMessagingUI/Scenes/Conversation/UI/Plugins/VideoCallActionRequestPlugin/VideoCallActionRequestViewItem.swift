@@ -1,10 +1,10 @@
 import Foundation
-import NablaMessagingCore
+import NablaMessagingCoreFork
 
 struct VideoCallActionRequestViewItem: ConversationViewMessageItem, Hashable {
     let id: UUID
     let date: Date
-    let sender: NablaMessagingCore.ConversationMessageSender
+    let sender: NablaMessagingCoreFork.ConversationMessageSender
     let sendingState: ConversationMessageSendingState
     var room: Room?
     var isContiguous: Bool = false

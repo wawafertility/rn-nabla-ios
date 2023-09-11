@@ -1,6 +1,6 @@
 import Foundation
-import NablaCore
-import NablaMessagingCore
+import NablaCoreFork
+import NablaMessagingCoreFork
 
 final class ConversationActivityPresenter: Presenter {
     var item: ConversationActivityViewItem

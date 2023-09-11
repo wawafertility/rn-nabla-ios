@@ -1,5 +1,5 @@
 import Foundation
-import NablaMessagingCore
+import NablaMessagingCoreFork
 import UIKit
 
 protocol ComposerViewDelegate: AnyObject {

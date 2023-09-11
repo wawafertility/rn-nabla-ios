@@ -1,5 +1,5 @@
 import Foundation
-import NablaMessagingCore
+import NablaMessagingCoreFork
 
 class MediaComposerPresenterImplementation: MediaComposerPresenter {
     init(viewContract: MediaComposerViewContract, delegate: MediaComposerPresenterDelegate) {

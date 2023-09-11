@@ -1,5 +1,5 @@
 import Foundation
-import NablaCore
+import NablaCoreFork
 import QuartzCore
 import UIKit
 

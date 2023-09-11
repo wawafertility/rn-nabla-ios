@@ -1,10 +1,10 @@
 import Foundation
-import NablaMessagingCore
+import NablaMessagingCoreFork
 
 struct TypingIndicatorViewItem: ConversationViewMessageItem {
     let id: UUID = .init()
     let date: Date = .init()
-    let sender: NablaMessagingCore.ConversationMessageSender
+    let sender: NablaMessagingCoreFork.ConversationMessageSender
     let sendingState: ConversationMessageSendingState = .sent
     let replyTo: ConversationViewMessageItem? = nil
     var isContiguous: Bool = false

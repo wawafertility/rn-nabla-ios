@@ -1,5 +1,5 @@
 import Combine
-import NablaCore
+import NablaCoreFork
 import UIKit
 
 extension ComposerView {

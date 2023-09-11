@@ -1,5 +1,5 @@
 import Foundation
-import NablaMessagingCore
+import NablaMessagingCoreFork
 
 // sourcery: AutoMockable
 protocol ConversationPresenter: Presenter {

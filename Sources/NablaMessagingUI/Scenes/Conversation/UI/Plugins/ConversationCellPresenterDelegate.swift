@@ -1,5 +1,5 @@
 import Foundation
-import NablaMessagingCore
+import NablaMessagingCoreFork
 
 protocol ConversationCellPresenterDelegate: AnyObject {
     func didUpdateState(forItemWithId id: UUID)

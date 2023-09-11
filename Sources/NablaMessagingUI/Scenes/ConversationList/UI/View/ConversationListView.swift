@@ -1,5 +1,5 @@
 import Foundation
-import NablaCore
+import NablaCoreFork
 import UIKit
 
 public class ConversationListView: UIView, ConversationListViewContract {

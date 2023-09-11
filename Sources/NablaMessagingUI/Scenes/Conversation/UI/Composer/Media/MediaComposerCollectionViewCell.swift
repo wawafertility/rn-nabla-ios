@@ -1,7 +1,7 @@
 import AVKit
 import Foundation
-import NablaCore
-import NablaMessagingCore
+import NablaCoreFork
+import NablaMessagingCoreFork
 import UIKit
 
 protocol MediaComposerCollectionViewCellDelegate: AnyObject {

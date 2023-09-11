@@ -1,5 +1,5 @@
 import Foundation
-import NablaMessagingCore
+import NablaMessagingCoreFork
 
 protocol ReplyToComposerPresenterDelegate: AnyObject {
     func replyToComposerPresenterDidTapCloseButton(_ presenter: ReplyToComposerPresenter)

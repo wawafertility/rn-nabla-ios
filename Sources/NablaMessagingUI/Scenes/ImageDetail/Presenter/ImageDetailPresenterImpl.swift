@@ -1,5 +1,5 @@
 import Foundation
-import NablaMessagingCore
+import NablaMessagingCoreFork
 
 class ImageDetailPresenterImpl: ImageDetailPresenter {
     // MARK: - Initializer

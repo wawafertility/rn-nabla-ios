@@ -1,5 +1,5 @@
 import Foundation
-import NablaMessagingCore
+import NablaMessagingCoreFork
 
 protocol MediaComposerPresenterDelegate: AnyObject {
     func mediaComposerPresenter(_ presenter: MediaComposerPresenter, didUpdateMedias medias: [Media])

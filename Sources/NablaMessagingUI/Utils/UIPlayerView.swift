@@ -1,6 +1,6 @@
 import AVFoundation
-import NablaCore
-import NablaMessagingCore
+import NablaCoreFork
+import NablaMessagingCoreFork
 import UIKit
 
 class UIPlayerView: UIView {

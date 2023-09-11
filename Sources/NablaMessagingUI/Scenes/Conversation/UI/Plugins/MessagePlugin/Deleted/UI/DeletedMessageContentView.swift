@@ -1,5 +1,5 @@
 import Foundation
-import NablaCore
+import NablaCoreFork
 import UIKit
 
 final class DeletedMessageContentView: UIView, MessageContentView {

@@ -1,7 +1,7 @@
 import Combine
 import Foundation
 import MobileCoreServices
-import NablaMessagingCore
+import NablaMessagingCoreFork
 import Photos
 import PhotosUI
 import UIKit

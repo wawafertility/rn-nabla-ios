@@ -1,5 +1,5 @@
 import Foundation
-import NablaCore
+import NablaCoreFork
 
 struct ConversationListItemViewModel: Hashable {
     let id: UUID

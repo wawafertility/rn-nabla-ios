@@ -1,6 +1,6 @@
 import Foundation
-import NablaCore
-import NablaMessagingCore
+import NablaCoreFork
+import NablaMessagingCoreFork
 
 enum AvatarViewModelTransformer {
     static func avatar(for conversation: Conversation) -> AvatarViewModel {

@@ -1,6 +1,6 @@
 import Foundation
-import NablaCore
-import NablaMessagingCore
+import NablaCoreFork
+import NablaMessagingCoreFork
 
 enum ConversationViewState {
     case loading
@@ -39,7 +39,7 @@ protocol ConversationViewContract: AnyObject {
 }
 
 protocol ConversationViewMessageItem: ConversationViewItem {
-    var sender: NablaMessagingCore.ConversationMessageSender { get }
+    var sender: NablaMessagingCoreFork.ConversationMessageSender { get }
     var sendingState: ConversationMessageSendingState { get }
     var replyTo: ConversationViewMessageItem? { get }
     var date: Date { get }

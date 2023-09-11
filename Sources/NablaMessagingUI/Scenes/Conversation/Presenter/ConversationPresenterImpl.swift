@@ -1,7 +1,7 @@
 import Combine
 import Foundation
-import NablaCore
-import NablaMessagingCore
+import NablaCoreFork
+import NablaMessagingCoreFork
 
 final class ConversationPresenterImpl: ConversationPresenter {
     // MARK: - Internal

@@ -1,7 +1,7 @@
 import Foundation
-import NablaCore
-import NablaDocumentScanner
-import NablaMessagingCore
+import NablaCoreFork
+import NablaDocumentScannerFork
+import NablaMessagingCoreFork
 import PDFKit
 import UIKit
 
