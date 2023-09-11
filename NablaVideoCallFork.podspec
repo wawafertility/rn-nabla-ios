@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name               = "NablaVideoCallFork"
-  spec.version            = "2.0.1"
+  spec.version            = "2.0.2"
   spec.module_name        = "NablaVideoCallFork"
   spec.summary            = "NablaVideoCall iOS SDK fork"
 
