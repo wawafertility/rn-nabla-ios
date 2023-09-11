@@ -1,8 +1,8 @@
 Pod::Spec.new do |spec|
 
-  spec.name               = "NablaMessagingCore"
+  spec.name               = "NablaMessagingCoreFork"
   spec.version            = "2.0.0"
-  spec.summary            = "#{spec.name} iOS SDK"
+  spec.summary            = "NablaMessagingCore iOS SDK fork"
 
   spec.description        = <<-DESC
       The Nabla iOS SDK makes it quick and easy to build an excellent healthcare communication experience in your iOS app. 
@@ -19,9 +19,8 @@ Pod::Spec.new do |spec|
   spec.platform           = :ios, "13.0"
   spec.swift_versions     = '5.0'
   spec.source             = { :git => "https://github.com/wawafertility/rn-nabla-ios.git", :tag => "#{spec.version}" }
-  spec.source_files       = ["Sources/#{spec.name}/**/*.swift"]
-  spec.resource_bundles   = {"#{spec.name}Resources" => "Sources/#{spec.name}/Resources/**/*"}
+  spec.source_files       = ["Sources/NablaMessagingCore/**/*.swift"]
+  spec.resource_bundles   = {"NablaMessagingCoreResources" => "Sources/NablaMessagingCore/Resources/**/*"}
 
-  # spec.dependency           'NablaCore', "#{spec.version}"
-  spec.dependency 'NablaCore', :git => 'https://github.com/wawafertility/rn-nabla-ios.git', :tag => "#{spec.version}"
+  spec.dependency           'NablaCoreFork', "#{spec.version}"
 end
