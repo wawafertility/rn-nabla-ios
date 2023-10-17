@@ -7,7 +7,7 @@ import NablaCoreTestsUtils
 
 struct TestEnvironment {
     struct NetworkConfiguration: NablaCore.NetworkConfiguration {
-        let websocketUrl: URL? = nil;
+        let webSocketUrl: URL? = nil;
         let domain = "localhost"
         let scheme = "http"
         let port: Int? = 8080
