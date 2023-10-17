@@ -6,7 +6,7 @@ public protocol NetworkConfiguration {
     var port: Int? { get }
     var path: String { get }
     var session: URLSession { get }
-    var websocketUrl: URL? { get }
+    var webSocketUrl: URL? { get }
 }
 
 struct DefaultNetworkConfiguration: NetworkConfiguration {
@@ -15,5 +15,5 @@ struct DefaultNetworkConfiguration: NetworkConfiguration {
     let port: Int? = nil
     let path = "/"
     let session = URLSession.shared
-    let websocketUrl: URL? = nil
+    let webSocketUrl: URL? = nil
 }
