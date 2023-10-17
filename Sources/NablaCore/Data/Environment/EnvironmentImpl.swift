@@ -23,6 +23,9 @@ class EnvironmentImpl: Environment {
     }
     
     var graphqlWebSocketUrl: URL {
+        guard networkConfiguration.webSocketUrl == nil else {
+            return networkConfiguration.webSocketUrl!
+        }
         var components = URLComponents()
         components.host = networkConfiguration.domain
         components.scheme = networkConfiguration.scheme == "https" ? "wss" : "ws"

@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name               = "NablaMessagingUIFork"
-  spec.version            = "2.0.2"
+  spec.version            = "2.0.3"
   spec.module_name        = "NablaMessagingUIFork"
   spec.summary            = "NablaMessagingUI iOS SDK fork"
 
